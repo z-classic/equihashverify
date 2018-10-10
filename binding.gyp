@@ -23,6 +23,14 @@
                     "-Wl,-rpath,./build/Release/",
                 ]
             },
+            'conditions': [
+              ['OS=="openbsd" or OS=="freebsd"', {
+                'include_dirs': [
+                  '/usr/local/include'],
+                 'libraries': [
+                   '-L/usr/local/lib']
+              }]     
+            ]
         },
         {
             "target_name": "libequi",
@@ -49,6 +57,14 @@
                     "-lsodium"
                 ],
             },
+            'conditions': [
+              ['OS=="openbsd" or OS=="freebsd"', {
+                'include_dirs': [
+                  '/usr/local/include'],
+                 'libraries': [
+                   '-L/usr/local/lib']
+              }]     
+            ]
         }
     ]
 }
