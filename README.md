@@ -13,4 +13,4 @@ ev.verify(header, solution);
 ````
 
 ##help
-https://discord.gg/sXWYQZP
+https://discord.gg/45NNrMJ
